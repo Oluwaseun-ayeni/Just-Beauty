@@ -1,0 +1,13 @@
+:root{
+  --primary_green:#0CCE68;
+  --primary_black: #0c090d;
+}
+
+*{
+  font-family: 'lato', sans-serif;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
