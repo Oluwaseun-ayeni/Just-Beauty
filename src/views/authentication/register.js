@@ -4,9 +4,11 @@ import emailIcon from '../../assets/email.svg'
 import passwordIcon from '../../assets/password.svg'
 import "./authentication.css"
 import StepContainer from "../../component/authentication/Register/stepContainer";
+import {useNavigate} from "react-router-dom";
 
 
 const Register = () =>{
+  let navigate = useNavigate()
     const[userInput, setUserInput] = useState({})
     const[step, setStep] = useState(1)
     const[fieldError, setFieldError] = useState(
@@ -17,16 +19,19 @@ const Register = () =>{
         phone: {message: "", error: false},
         password: {message: "", error: false},
         confirm: {message: "", error: false}
-    })
+    });
+
+
     
     const handleChange = (e) => {
         setUserInput({...userInput,[e.target.name]:e.target.value})
         checkIfFieldIsEmpty(e)
     }
 
-    const handleClick = () =>{
+    const handleClick =() =>{
         console.log(userInput)
-    }
+    };
+
     const checkIfFieldIsEmpty = (e) => {
         switch (e.target.name){
             case "email":
@@ -63,6 +68,7 @@ const Register = () =>{
                         }
                     }) 
                 }
+                break;
 
             default:
                 break;    
@@ -71,20 +77,20 @@ const Register = () =>{
 
     }
 
-    const checkIfItIsEmail = () => {
+    // const checkIfItIsEmail = () => {
 
-    }
+    // }
     return(
     <div className="authentication-container">
       <div className="leftside">
          <div className="leftside-container">
-            <a>
-                Dont have an account?
+            <a onClick={() => navigate("/login")}>
+                Alrewady have an account?
                 <span style={{
                     color: 'white',
                     marginLeft: '4px'
-                }}>
-                    sign up
+                }}>   login
+
 
                 </span>
             </a>
