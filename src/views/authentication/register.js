@@ -5,6 +5,7 @@ import passwordIcon from '../../assets/password.svg'
 import "./authentication.css"
 import StepContainer from "../../component/authentication/Register/stepContainer";
 import {useNavigate} from "react-router-dom";
+import axios from "axios";
 
 
 const Register = () =>{
@@ -29,7 +30,16 @@ const Register = () =>{
     }
 
     const handleClick =() =>{
-        console.log(userInput)
+        let data ={
+            id:2,
+            firstname: 'ujay',
+            lastname: 'Ehi'
+
+        }
+        axios.post("http://localhost:3004/account",data).
+        then((data) => console.log(data)).
+        catch((error) => console.log(error))
+       
     };
 
     const checkIfFieldIsEmpty = (e) => {
