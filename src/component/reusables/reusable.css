@@ -48,11 +48,19 @@
 }
 
 .input-container:focus-within{
-    border: 2px solid white;
+    border: 2px solid var(--primary_green);
 }
 
 
-.input-container img{
+.input-container:focus-within > .label-container{
+    background-color: var(--primary_green);
+}
+
+.input-error-container{
+    margin: 10px 0;
+}
+
+/* .input-container img{
     height: 16px;
 }
 
@@ -75,5 +83,5 @@
 .input-error-container{
     height: 20px;
     margin: 10px 0;
-}
+} */
 

@@ -1,9 +1,106 @@
 {
-    "account":[
-        {
-            "id": 1,
-            "firstname":"John",
-            "lastname":"Smith"
-        }
+  "account": [
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "a.oluwaseun@native.semicolon.africa",
+      "phone": "ww",
+      "password": "ww",
+      "confirm": "ww",
+      "id": 1
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "a.oluwaseun@native.semicolon.africa",
+      "phone": "2348139581589",
+      "password": "SEUN",
+      "confirm": "SEUN",
+      "id": 2
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "a.oluwaseun@native.semicolon.africa",
+      "phone": "2348139581589",
+      "password": "SEUN",
+      "confirm": "SEUN",
+      "id": 3
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reyn",
+      "email": "Oayeni139@gmail.com",
+      "phone": "465 847 8456",
+      "password": "pppp",
+      "confirm": "pppp",
+      "id": 4
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "Oayeni139@gmail.com",
+      "phone": "2348139581589",
+      "password": "gdgd",
+      "confirm": "gdgd",
+      "id": 5
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "Oayeni139@gmail.com",
+      "phone": "2348139581589",
+      "password": "gdgd",
+      "confirm": "gdgd",
+      "id": 6
+    },
+    {
+      "firstname": "Michelle",
+      "lastname": "Reynders",
+      "email": "Oayeni139@gmail.com",
+      "phone": "2348139581589",
+      "password": "gdgd",
+      "confirm": "gdgd",
+      "id": 7
+    }
+  ],
+  "event": [
+    {
+      "id": 1,
+      "date_created": "2015-12-23",
+      "date_updated": "2015-12-23",
+      "location": "",
+      "venue": "",
+      "stop_time": "",
+      "start_time": "",
+      "event_theme": "",
+      "description": "",
+      "event-category": "",
+      "event_date": "",
+      "created-by": "",
+      "host": "",
+      "guest": [],
+      "attendees": [],
+      "event-banner": "",
+      "event-image": "",
+      "sponsor": [],
+      "ticket_category": "",
+      "ticket_fee": "",
+      "event_teams": [],
+      "event_dress_code": ""
+
+    }
+  ],
+  
+  "fakeEvents":[
+    {"title":"Alakija",
+      "description":"today is the day of the lord has made"
+    },
+    {"title":"Norbs",
+    "description":"Get together landmark beach"
+    },
+    {"title":"Tobi",
+    "description":"The gathering of the summoned"
+    }
     ]
 }

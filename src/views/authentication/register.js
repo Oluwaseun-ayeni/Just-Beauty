@@ -30,17 +30,14 @@ const Register = () =>{
     }
 
     const handleClick =() =>{
-        let data ={
-            id:2,
-            firstname: 'ujay',
-            lastname: 'Ehi'
 
-        }
-        axios.post("http://localhost:3004/account",data).
+        // setLoading(true)
+        axios.post("http://localhost:3004/account",userInput).
         then((data) => console.log(data)).
         catch((error) => console.log(error))
+        // finally(() => setLoading(false))
        
-    };
+    }
 
     const checkIfFieldIsEmpty = (e) => {
         switch (e.target.name){
@@ -153,6 +150,8 @@ const Register = () =>{
     </div>
 
     )
+
 }
+
 
 export default Register

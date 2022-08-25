@@ -1,6 +1,9 @@
 :root{
   --primary_green:#0CCE68;
   --primary_black: #0c090d;
+  --dashboard_main:#1f1f1f;
+  --dashboard_accent:#777272;
+  --primary_white:#fff;
 }
 
 *{

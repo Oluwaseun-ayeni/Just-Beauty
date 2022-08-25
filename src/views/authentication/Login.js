@@ -4,6 +4,7 @@ import Input from "../../component/reusables/Input"
 import emailIcon from '../../assets/email.svg'
 import passwordIcon from '../../assets/password.svg'
 import "./authentication.css"
+import axios from "axios"
 
 
 const Login = () =>{
@@ -20,7 +21,15 @@ const Login = () =>{
     }
 
     const handleClick = () =>{
-        console.log(userInput)
+        axios.get('http://localhost:3004/account/?email{userInput["email"]}').
+        then((result) => {
+          
+            result.data[0].password === userInput["password"] && navigate("/dashboard")
+            }).
+        
+       
+        catch((error) => console.log(error))
+        
     }
     const checkIfFieldIsEmpty = (e) => {
         switch (e.target.name){
@@ -31,7 +40,7 @@ const Login = () =>{
                                 message: "Please enter a valid email",
                                 error : true
                             }
-                        })
+                        }) 
                 } else{
                     setFieldError(
                         {...fieldError,[e.target.name] : {
@@ -64,12 +73,12 @@ const Login = () =>{
                 break;    
         }
         
-
+        if(e.target.value === "") return true
     }
 
-    // const checkIfItIsEmail = () => {
+    const checkIfItIsEmail = () => {
 
-    // }
+    }
     return(
     <div className="authentication-container">
       <div className="leftside">
